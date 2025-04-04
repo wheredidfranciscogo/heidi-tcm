@@ -2,28 +2,30 @@
   "colors": {
     "default": {
       "theme_color": {
-        "primary": "#121212",
-        "body": "#fff",
+        "primary": "#000000",
+        "body": "#ffffff",
         "border": "#eaeaea",
         "light": "#f6f6f6",
-        "dark": "#040404"
+        "dark": "#040404",
+        "bridal-500": "#fdf8f1",
+        "bridal-600": "#f7f0e3"
       },
       "text_color": {
-        "text": "#444444",
+        "text": "#000000",
         "text-dark": "#040404",
         "text-light": "#717171"
       }
     },
     "darkmode": {
       "theme_color": {
-        "primary": "#fff",
-        "body": "#1c1c1c",
+        "primary": "#000000",
+        "body": "#ffffff",
         "border": "#3E3E3E",
         "light": "#222222",
         "dark": "#fff"
       },
       "text_color": {
-        "text": "#B4AFB6",
+        "text": "#000000",
         "text-dark": "#fff",
         "text-light": "#B4AFB6"
       }

@@ -1,0 +1,31 @@
+{{ with site.GetPage "sections/landing" }}
+{{ if .Params.enable }}
+  <section class="min-h-screen grid grid-cols-1 md:grid-cols-2 items-center bg-bridal-600 text-black px-0 md:px-0 lg:px-0 flex flex-col justify-end">
+    <!-- Left Side: Text -->
+    <div class="text-center md:text-left max-w-2xl">
+      <div class="bg-bridal-600 p-8">
+        <h1 class="text-xl md:text-2xl font-bold mb-4">
+          {{ .Title | markdownify }}
+        </h1>
+        <p class="text-md md:text-lg mb-6">
+          {{ .Params.description | markdownify }}
+        </p>
+        {{ with .Params.button }}
+          {{ if .enable }}
+            <a href="{{ .link | absURL }}" class="btn btn-primary mt-6">
+              {{ .label }}
+            </a>
+          {{ end }}
+        {{ end }}
+      </div>
+    </div>
+
+    <!-- Right Side: Full-Cover Image -->
+    <div class="h-full w-full overflow-hidden">
+      {{ with .Params.image }}
+      <img src="{{ "images/service-1.png" | relURL }}" alt="Landing Image" class="object-cover h-full w-full" />
+      {{ end }}
+    </div>
+  </section>
+{{ end }}
+{{ end }}

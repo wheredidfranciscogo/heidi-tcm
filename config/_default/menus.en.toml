@@ -2,27 +2,27 @@
 
 # main menu
 [[main]]
-name = "Home"
+name = "HOME"
 url = "/"
 weight = 1
 
 [[main]]
-name = "About"
+name = "ABOUT"
 url = "/about"
 weight = 2
 
 [[main]]
-name = "Blog"
+name = "BLOG"
 url = "/blog"
 weight = 3
 
 [[main]]
-name = "Contact"
+name = "CONTACT"
 url = "/contact"
 weight = 4
 
 [[main]]
-name = "Categories"
+name = "CATEGORIES"
 url = "/categories"
 weight = 5
 

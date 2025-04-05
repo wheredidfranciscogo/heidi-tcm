@@ -1,5 +1,5 @@
 ---
-title: "Heidi’s Fertility, Pregnancy, and Hormone Health Acupuncture Clinic"
+title: "Oakland’s Fertility, Pregnancy, and Hormone Health Acupuncture Clinic"
 description: |
   We are here for you, from your very first period to menopause and all the time in between.
 button:

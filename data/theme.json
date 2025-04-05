@@ -7,13 +7,14 @@
         "border": "#eaeaea",
         "light": "#f6f6f6",
         "dark": "#040404",
-        "bridal-500": "#fdf8f1",
+        "bridal-500": "#fdf8f2",
         "bridal-600": "#f7f0e3"
       },
       "text_color": {
         "text": "#000000",
         "text-dark": "#040404",
-        "text-light": "#717171"
+        "text-light": "#717171",
+        "text-bridal": "#273f54"
       }
     },
     "darkmode": {
@@ -33,13 +34,13 @@
   },
   "fonts": {
     "font_family": {
-      "primary": "Poppins:wght@400;600",
+      "primary": "Proxima Nova",
       "primary_type": "sans-serif",
-      "secondary": "Signika:wght@500;700",
+      "secondary": "Libre Caslon Text",
       "secondary_type": "sans-serif"
     },
     "font_size": {
-      "base": "16",
+      "base": "14",
       "scale": "1.2"
     }
   }

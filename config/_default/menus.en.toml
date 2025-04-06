@@ -21,11 +21,6 @@ name = "CONTACT"
 url = "/contact"
 weight = 4
 
-[[main]]
-name = "CATEGORIES"
-url = "/categories"
-weight = 5
-
 # footer menu
 [[footer]]
 name = "About"

@@ -1,0 +1,31 @@
+{{ with site.GetPage "sections/banner-2" }}
+{{ if .Params.enable }}
+<section class="grid grid-cols-1 md:grid-cols-2 bg-bridal-100 text-black px-0 py-16">
+  <!-- Left Side: Text Content -->
+  <div class="flex flex-col justify-between max-w-2xl mx-auto p-8 md:p-16">
+    <div>
+      <h2 class="text-2xl md:text-4xl font-bold mb-6 text-text-bridal">
+        {{ .Title | markdownify }}
+      </h2>
+      <p class="text-md md:text-lg leading-relaxed whitespace-pre-line">
+        {{ .Params.description | markdownify }}
+      </p>
+    </div>
+    {{ with .Params.button }}
+      {{ if .enable }}
+        <a href="{{ .link | absURL }}" class="btn btn-primary mt-10 w-max">
+          {{ .label }}
+        </a>
+      {{ end }}
+    {{ end }}
+  </div>
+
+  <!-- Right Side: Centered Square Image -->
+  <div class="flex items-center justify-center p-8">
+    {{ with .Params.image }}
+    <img src="{{ printf "images/%s" . | relURL }}" alt="Team Photo" class="object-cover h-[60%] " />
+    {{ end }}
+  </div>
+</section>
+{{ end }}
+{{ end }}

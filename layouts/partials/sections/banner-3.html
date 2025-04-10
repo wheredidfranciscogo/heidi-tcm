@@ -1,10 +1,10 @@
 {{ with site.GetPage "sections/banner-3" }}
 {{ if .Params.enable }}
-<section class="grid grid-cols-1 md:grid-cols-2 bg-bridal-100 text-black px-0 py-16">
+<section class="grid grid-cols-1 md:grid-cols-2 bg-bridal-600 text-black px-0 py-16">
   <!-- Left Side: Centered Square Image -->
   <div class="flex items-center justify-center p-8">
     {{ with .Params.image }}
-    <img src="{{ printf "images/%s" . | relURL }}" alt="Clinic Photo" class="object-cover h-[20%]" />
+    <img src="{{ printf "images/%s" . | relURL }}" alt="Team Photo" class="object-cover h-[60%] " />
     {{ end }}
   </div>
 
@@ -19,11 +19,11 @@
       </p>
     </div>
     {{ with .Params.button }}
-      {{ if .enable }}
-        <a href="{{ .link | absURL }}" class="btn btn-primary mt-10 w-max">
-          {{ .label }}
-        </a>
-      {{ end }}
+    {{ if .enable }}
+    <a href="{{ .link | absURL }}" class="btn btn-primary mt-10 w-max">
+      {{ .label }}
+    </a>
+    {{ end }}
     {{ end }}
   </div>
 </section>

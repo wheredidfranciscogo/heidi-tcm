@@ -6,5 +6,5 @@ button:
   enable: true
   label: "Meet the team"
   link: "/about-us"
-image: "service-3.png"
+image: "hand-2.jpg"
 ---

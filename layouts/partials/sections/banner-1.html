@@ -1,29 +1,29 @@
 {{ with site.GetPage "sections/banner-1" }}
 {{ if .Params.enable }}
-  <section class="grid grid-cols-1 md:grid-cols-2 bg-bridal-500 text-black px-0 md:px-0 lg:px-0">
+  <section class="grid grid-cols-1 md:grid-cols-2 px-0 md:px-0 lg:px-0 bg-bridal-500">
     <!-- Left Side: Text -->
      <!-- modify the padding and the whole banner for text -->
-    <div class="text-left max-w-2xl pb-0 mx-auto">
-      <div class="bg-bridal-500 p-8 pt-16 pb-0 md:p-16">
-        <p class="text-xl md:text-xl mb-8 font-bold text-text-bridal leading-[1.55]">
+    <div class="text-left max-w-2xl pb-0 mx-auto bg-bridal-500">
+      <div class="p-8 pt-16 pb-0 md:p-16 lg:pl-36">
+        <p class="text-base font-bold font-calibrelight mb-8 text-text-bridal leading-[1.55]">
           {{ .Title | markdownify }}
         </p>
-        <p class="text-md md:text-lg mb-6">
+        <p class="text-base font-calibrelight text-text-bridal mb-6">
           {{ .Params.description | markdownify }}
         </p>
       </div>
     </div>
 
     <!-- Right Side: Text -->
-    <div class="text-left max-w-2xl pb-0 mx-auto">
-        <div class="bg-bridal-500 p-8 md:pt-16 md:pb-16 md:pr-16 md:pl-4">
-          <p class="text-md md:text-lg mb-6">
+    <div class="text-left max-w-2xl pb-0 mx-auto bg-bridal-500">
+        <div class="p-8 md:pt-16 md:pb-16 md:pr-16 md:pl-4">
+          <p class="text-base font-calibrelight text-text-bridal mb-6">
             {{ .Params.additional | markdownify }}
           </p>
-          <p class="text-md md:text-lg mb-6">
+          <p class="text-base font-calibrelight text-text-bridal mb-6">
             {{ .Params.additional2 | markdownify }}
           </p>
-          <p class="text-md md:text-lg mb-6">
+          <p class="text-base font-calibrelight text-text-bridal mb-6">
             {{ .Params.additional3 | markdownify }}
           </p>
         </div>
